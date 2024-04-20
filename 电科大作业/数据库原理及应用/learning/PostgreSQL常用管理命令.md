@@ -7,8 +7,10 @@ select datname from pg_database;
 ```
 ## 创建数据库
 ```
-create database dat_name owner 
+create database 'dat_name' owner 'long_onwer' enconding UIF8;
+```
+## 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY0NDM2NDc3XX0=
+eyJoaXN0b3J5IjpbMTUxNjkwMTcwOV19
 -->
