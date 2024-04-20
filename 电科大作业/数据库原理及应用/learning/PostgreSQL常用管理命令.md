@@ -25,11 +25,16 @@ WHERE datname='mydb' AND pid<>pg_backend_pid();
 ```
 create table "t_user"(
 "id" bigserial not null,
-
+"user_name" varchar(64) not null,
+"password" varchar (64) not null,  
+"create_time" timestamp not null default current_timestamp,  
+"update_time" timestamp not null default current_timestamp,  
+constraint t_user_pk primary key (id)  
+);
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTQxNzY0Ml19
+eyJoaXN0b3J5IjpbLTE4Njg3ODg4NTldfQ==
 -->
