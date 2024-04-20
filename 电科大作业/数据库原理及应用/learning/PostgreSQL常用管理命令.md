@@ -12,8 +12,18 @@ create database 'dat_name' owner 'long_onwer' enconding UIF8;
 -- 重新登陆到新的数据库下。执行语句
 creat schema AUTHORIZATTION CURRENT_USER;
 ```
-## 
+## 删除数据库
+```
+drop database 'datname';
+注意：删库前需要关闭所有会话，不然会提示：
+SELECT pg_terminate_backend(pg_stat_activity.pid)  
+FROM pg_stat_activity  
+WHERE datname='mydb' AND pid<>pg_backend_pid();
+```
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MTU2MDI3M119
+eyJoaXN0b3J5IjpbMjA3OTk5NjgyXX0=
 -->
