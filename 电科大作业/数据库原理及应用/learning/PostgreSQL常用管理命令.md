@@ -20,10 +20,16 @@ SELECT pg_terminate_backend(pg_stat_activity.pid)
 FROM pg_stat_activity  
 WHERE datname='mydb' AND pid<>pg_backend_pid();
 ```
+# 表管理
+## 创建表模板语句
+```
+create table "t_user"(
+"id" bigserial not null,
+
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3OTk5NjgyXX0=
+eyJoaXN0b3J5IjpbMTI2NTQxNzY0Ml19
 -->
